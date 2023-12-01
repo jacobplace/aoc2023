@@ -12,6 +12,12 @@ swap = {
     "nine": "n9e",
 }
 
+def test():
+    assert extract_numbers("8ee4wd2") == "842"
+    assert convert_numbers("eightwo") == "e8t2o"
+    assert score("853") == 83
+    assert score("5") == 55
+
 
 def extract_numbers(s: str) -> str:
     return "".join([n for n in re.findall(r"(\d)", s)])
@@ -31,6 +37,7 @@ def score(s: str) -> int:
 
 
 def main():
+    test()
     s1 = 0
     s2 = 0
     with open("input") as ifile:
