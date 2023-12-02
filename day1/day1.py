@@ -12,6 +12,7 @@ swap = {
     "nine": "n9e",
 }
 
+
 def test():
     assert extract_numbers("8ee4wd2") == "842"
     assert convert_numbers("eightwo") == "e8t2o"
@@ -40,7 +41,7 @@ def main():
     test()
     s1 = 0
     s2 = 0
-    with open("input") as ifile:
+    with open("input.1") as ifile:
         for line in ifile:
             s1 += score(extract_numbers(line))
             s2 += score(extract_numbers(convert_numbers(line)))
