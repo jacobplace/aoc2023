@@ -154,3 +154,4 @@ cython_debug/
 
 go.mod
 input
+test
